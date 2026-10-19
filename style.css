@@ -362,7 +362,7 @@ transition: 1s;
   background: #fffaf7;
   border: 1px solid #d3c7c5;
   border-radius: 50%;
-  cursor: grab;
+  cursor: move;
   touch-action: none;
   display: none;
   z-index: 2;
@@ -373,7 +373,7 @@ transition: 1s;
 }
 
 .rotate-handle:active {
-  cursor: grabbing;
+  cursor: move;
 }
 
 .remove-handle {
