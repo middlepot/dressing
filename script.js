@@ -38,7 +38,7 @@ const garments = {
     ...makeItems("undergarments", "socks", 5)
   ],
 
-  "footwear": makeItems("footwear", "shoes", 7)
+  "footwear": makeItems("footwear", "shoes", 8)
 };
 
 
