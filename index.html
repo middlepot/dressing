@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my dressing room</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700');
+</style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <div class="dressing-room">
+
+      <section class="wardrobe">
+        <div class="drawers" id="drawers">
+
+          <button class="drawer active" data-category="dresses & gowns">dresses & gowns</button>
+          <button class="drawer" data-category="blouses">blouses</button>
+          <button class="drawer" data-category="aprons & pinafores">aprons & pinafores</button>
+
+          <button class="drawer" data-category="petticoats & skirts">petticoats & skirts</button>
+          <button class="drawer" data-category="bloomers & pantaloons">bloomers & pantaloons</button>
+          <button class="drawer" data-category="woolens, wraps & cloaks">woolens, wraps & cloaks</button>
+
+          <button class="drawer" data-category="ballet attire">ballet attire</button>
+          <button class="drawer" data-category="bathing finery">bathing finery</button>
+          <button class="drawer" data-category="jewellery & eyewear">jewellery & eyewear</button>
+
+          <button class="drawer" data-category="headwear & hair adornments">headwear & hair adornments</button>
+          <button class="drawer" data-category="undergarments & hosiery">undergarments & hosiery</button>
+          <button class="drawer" data-category="footwear">footwear</button>
+
+        </div>
+
+        <div class="garment-display">
+          <h3 class="category-title" id="category-title">dresses & gowns</h3>
+          <div class="garment-grid" id="garment-grid"></div>
+        </div>
+
+      </section>
+
+      <section class="dressing-frame">
+<h2 class="box-title">
+  <span class="subtitle">what shall i wear ?</span>
+</h2>
+
+<div class="outfit-area" id="outfit-area"
+     aria-label="Arrange your outfit here">
+</div>
+
+<button class="clear-outfit" id="clear-outfit" type="button">
+  clear outfit
+</button>
+<br>
+<div class="fragment">with my ribbons tied, <a id="link" href="http://garden.puf.li" target="_blank">i am ready to go ..</a></div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>

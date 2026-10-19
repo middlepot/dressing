@@ -1,0 +1,432 @@
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+        cursor: url(./img/cursor.png), progress;
+
+        a:hover {
+            cursor: url(./img/cursorh.png), progress;
+        }
+
+        ::selection {
+            text-shadow: 0 0 2px #cec1bb;
+            color: #cec1bb
+        }
+
+        ::-moz-selection {
+            text-shadow: 0 0 2px #cec1bb;
+            color: #cec1bb
+        }
+        margin: 0;
+        min-height: 100vh;
+        background-image: url('./img/bg.png');
+        background-repeat: repeat;
+        background-color: #f2efed;
+        font-size: 0.9rem;
+        font-family: 'Lora', serif;
+        line-height: 1.4;
+        letter-spacing: 0.6px;
+        text-align: left;
+        color: #9e8d8d;
+        scrollbar-color: #e2d5d0 transparent;
+}
+
+    i {
+        text-decoration: none;
+        color: #C0ADA9;
+        text-shadow: 0 0 2px #cec1bb;
+    }
+
+    a {  
+text-decoration: none;
+color: #C0ADA9;
+text-shadow: 0 0 2px #DCCCC9;
+transition: 1s;
+	}
+
+	a:hover { 
+color: #DCCCC9;
+text-shadow: 0 0 2px #e8e1e1;
+filter: blur(1px);
+transition: 1s;
+	}  
+
+  .fragment {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#link {
+  text-align: right;
+  color: #cebebb;
+}
+
+    
+.wavy {
+    text-weight: normal;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #d9d2d2;
+    text-underline-offset: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e2d5d0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e2d5d0;
+}
+
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  margin-top: -5vh;
+}
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: normal;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      font-style: italic;
+      text-shadow: 0 0 2px #DCCCC9;
+      margin: 0;
+    }
+
+    .dressing-room {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 24px;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+.wardrobe,
+.dressing-frame {
+  padding: 0px;
+  min-width: 0;
+  height: 700px;
+}
+
+.wardrobe {
+  flex: 0 1 550px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+      border: 80px solid transparent;
+    border-image-source: url('./img/wardrobe.png');
+    border-image-slice: 25% fill;
+    border-image-repeat: round;
+    background-clip: padding-box;
+    background-color: transparent;
+}
+
+.dressing-frame {
+  flex: 1 1 500px;
+        border: 80px solid transparent;
+    border-image-source: url('./img/frame.png');
+    border-image-slice: 25% fill;
+    border-image-repeat: round;
+    background-clip: padding-box;
+    background-color: transparent;
+}
+
+    .box-title {
+      font-size: 16px;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 20px;
+    }
+
+    .drawers {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .drawer {
+      min-height: 48px;
+      padding: 6px 4px;
+      background: #f5f3f1;
+      border: 1px dotted #d3c7c5;
+      border-radius: 3px;
+      color: #9e8d8d;
+      font-family: 'Lora', serif;
+      font-size: 0.7rem;
+      line-height: 1.3;
+      cursor: url(./img/cursorh.png), progress;
+      overflow-wrap: anywhere;
+    }
+
+    .drawer:hover {
+      background: transparent;
+    }
+
+    .drawer.active {
+      background: #ebe3e2;
+      border: 1px dotted #d3c7c5;
+    }
+
+.garment-display {
+  background: #f5f3f1;
+  border: 1px dotted #d3c7c5;
+  border-radius: 3px;
+  padding: 12px;
+
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+    .category-title {
+      font-size: 13px;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 14px;
+    }
+
+    .garment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+.garment {
+  aspect-ratio: 3 / 4;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: url(./img/cursorh.png), pointer;
+  transition: background-color 0.2s ease;
+}
+
+.garment:hover {
+  background: #ebe3e2;
+}
+
+    .garment img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.dressing-frame {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.dressing-frame .box-title {
+  flex-shrink: 0;
+}
+
+.outfit-area {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.outfit-item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.outfit-item.dragging {
+  cursor: grabbing;
+}
+
+.outfit-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.outfit-item.selected {
+  outline: 1px dashed #d3c7c5;
+  outline-offset: 2px;
+}
+
+.resize-handle {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  width: 13px;
+  height: 13px;
+  background: #fffaf7;
+  border: 1px solid #d3c7c5;
+  border-radius: 2px;
+  cursor: nwse-resize;
+  touch-action: none;
+  display: none;
+  z-index: 1;
+}
+
+.outfit-item.selected .resize-handle {
+  display: block;
+}
+
+.clear-outfit {
+  display: block;
+  flex-shrink: 0;
+  margin: 12px auto 0;
+  padding: 6px 16px;
+  background: #f1eeed;
+  border: 1px dotted #d3c7c5;
+  border-radius: 3px;
+  color: #9e8d8d;
+  font-size: 0.8rem;
+  font-family: 'Lora', serif;
+  cursor: url(./img/cursorh.png), pointer;
+}
+
+.clear-outfit:hover {
+  background: transparent;
+}
+
+.garment img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.garment.in-outfit {
+  background: #fffaf7;
+  border: 1px dotted #d3c7c5;;
+}
+
+
+.outfit-item {
+  transform-origin: center center;
+}
+
+.rotate-handle {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 13px;
+  height: 13px;
+  background: #fffaf7;
+  border: 1px solid #d3c7c5;
+  border-radius: 50%;
+  cursor: grab;
+  touch-action: none;
+  display: none;
+  z-index: 2;
+}
+
+.outfit-item.selected .rotate-handle {
+  display: block;
+}
+
+.rotate-handle:active {
+  cursor: grabbing;
+}
+
+.remove-handle {
+  position: absolute;
+  top: -7px;
+  left: -7px;
+
+  width: 16px;
+  height: 16px;
+  padding: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background: #fffaf7;
+  border: 1px solid #d3c7c5;
+  border-radius: 50%;
+
+  color: #9e8d8d;
+  font-size: 1rem;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  line-height: 1;
+
+  cursor: pointer;
+  touch-action: manipulation;
+  z-index: 3;
+}
+
+.outfit-item.selected .remove-handle {
+  display: flex;
+}
+
+.remove-handle:hover {
+  background: #fffaf7;
+  color: #8a7c7c;
+}
+
+@media (max-width: 700px) {
+  .dressing-room {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wardrobe,
+  .dressing-frame {
+    flex: none;
+    width: 100%;
+    height: 550px;
+  }
+  
+.page {
+  margin-top: 5vh;
+}
+}
