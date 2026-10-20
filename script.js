@@ -4,11 +4,11 @@ const makeItems = (folder, prefix, count) =>
   );
 
 const garments = {
-  "dresses & gowns": makeItems("dresses", "dress", 11),
+  "dresses & gowns": makeItems("dresses", "dress", 15),
 
-  "blouses": makeItems("blouses", "blouse", 7),
+  "blouses": makeItems("blouses", "blouse", 8),
 
-  "aprons & pinafores": makeItems("aprons", "apron", 5),
+  "aprons & pinafores": makeItems("aprons", "apron", 6),
 
   "petticoats & skirts": makeItems("skirts", "skirt", 8),
 
@@ -34,11 +34,11 @@ const garments = {
   ],
 
   "undergarments & hosiery": [
-    ...makeItems("undergarments", "camisole", 5),
+    ...makeItems("undergarments", "camisole", 6),
     ...makeItems("undergarments", "socks", 5)
   ],
 
-  "footwear": makeItems("footwear", "shoes", 8)
+  "footwear": makeItems("footwear", "shoes", 9)
 };
 
 
