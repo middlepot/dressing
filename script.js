@@ -15,7 +15,7 @@ const garments = {
   "bloomers & pantaloons": makeItems("bloomers", "bloomers", 6),
 
   "woolens, wraps & cloaks": [
-    ...makeItems("woolens", "cape", 2),
+    ...makeItems("woolens", "cape", 3),
     ...makeItems("woolens", "cardigan", 6)
   ],
 
