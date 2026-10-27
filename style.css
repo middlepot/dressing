@@ -423,8 +423,8 @@ transition: 1s;
   width: 200px;
   height: 20px;
   padding: 0 10px;
-  background: #f5f3f2;
-  border: 1px dotted #ac9f9f
+  background: transparent;
+  border: 1px dotted #d1c0c0
 ;
   border-radius: 12px;
 }
