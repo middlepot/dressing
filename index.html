@@ -17,7 +17,7 @@
   <main class="page">
 
     <div class="dressing-room">
-
+      
       <section class="wardrobe">
         <div class="drawers" id="drawers">
 
@@ -52,15 +52,33 @@
 </h2>
 
 <div class="outfit-area" id="outfit-area"
-     aria-label="Arrange your outfit here">
+     aria-label="arrange your outfit here">
 </div>
 
+<div style="line-height: 15px;">
 <button class="clear-outfit" id="clear-outfit" type="button">
   clear outfit
 </button>
 <br>
+         <div class="music-player">
+<button class="music-toggle" aria-label="Play music" type="button">
+    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+    <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" hidden>
+      <path d="M6 5h4v14H6zm8 0h4v14h-4z"/>
+    </svg>
+  </button>
+  <input class="music-progress" type="range"
+         min="0" max="100" value="0"
+         aria-label="Music progress">
+  <audio autoplay loop preload="metadata" src="a_pretty_dress.mp3"></audio>
+</div> 
+<script src="musicplayer.js"></script>
+<br>
 <div class="fragment">with my ribbons tied, <a id="link" href="http://garden.puf.li" target="_blank">i am ready to go ..</a></div>
-      </section>
+</div>
+</section>
 
     </div>
 
